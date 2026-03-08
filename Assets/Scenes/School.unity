@@ -984,7 +984,7 @@ MonoBehaviour:
   controller: {fileID: 339815032}
   animator: {fileID: 339815029}
   moveSpeed: 800
-  gravity: -20
+  gravity: -200
   mouseTurnSpeed: 2
 --- !u!114 &339815034
 MonoBehaviour:
@@ -1204,7 +1204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 183c2cc0fb35d3444af411a56cdccb14, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 183c2cc0fb35d3444af411a56cdccb14, type: 3}
       propertyPath: m_LocalPosition.z
