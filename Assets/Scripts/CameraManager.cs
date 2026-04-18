@@ -40,6 +40,10 @@ public class CameraManager : MonoBehaviour
             isTopDownMode = !isTopDownMode;
             SetCamera(isTopDownMode ? vCam_TopDown : vCam_TPS);
         }
+
+
+
+
     }
 
     // Seçilen kamerayý açýp diðerlerini kapatan yardýmcý fonksiyon
