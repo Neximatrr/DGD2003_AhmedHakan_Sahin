@@ -1190,9 +1190,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStrafeMovement
   controller: {fileID: 339815032}
-  animator: {fileID: 339815029}
-  moveSpeed: 800
-  gravity: -200
+  animator: {fileID: 0}
+  moveSpeed: 600
+  gravity: -2000
+  jumpHeight: 200
+  annen: 50
+  dashSpeed: 2500
+  dashTime: 0.2
+  dashCooldown: 1
   mouseTurnSpeed: 2
 --- !u!114 &339815034
 MonoBehaviour:
