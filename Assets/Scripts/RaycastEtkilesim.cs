@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Events; // 1. BU SATIR ÞART (Event sistemi için)
+using UnityEngine.Events;
 
 public class RaycastEtkilesim : MonoBehaviour
 {
@@ -8,7 +8,7 @@ public class RaycastEtkilesim : MonoBehaviour
     public float mesafe = 2500f;
     public Color lazerRengi = Color.red;
 
-    // 2. Unity Event Tanýmlama (Inspector'da kutu olarak gözükecek)
+    // Unity Event Tanýmlama (Inspector'da kutu olarak gözükecek)
     public UnityEvent onKupVuruldu;
 
     void Update()
@@ -22,11 +22,13 @@ public class RaycastEtkilesim : MonoBehaviour
 
             if (carpanObje.collider.CompareTag("Etkilesim") && Keyboard.current.fKey.wasPressedThisFrame)
             {
-                // Mevcut Renk Deðiþtirme Kodun
+                // Rastgele renk oluþturuluyor
                 Color rastgeleRenk = new Color(Random.value, Random.value, Random.value);
-                carpanObje.collider.GetComponent<MeshRenderer>().material.color = rastgeleRenk;
 
-                // 3. EVENT TETÝKLEME (Haber salýyoruz!)
+                // YENÝ TESÝSAT: Shader Graph'teki "_BaseColor" kutusuna rengi yolluyoruz!
+                carpanObje.collider.GetComponent<MeshRenderer>().material.SetColor("_BaseColor", rastgeleRenk);
+
+                // EVENT TETÝKLEME (Haber salýyoruz!)
                 if (onKupVuruldu != null)
                 {
                     onKupVuruldu.Invoke();
