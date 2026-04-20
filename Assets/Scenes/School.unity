@@ -1192,7 +1192,7 @@ MonoBehaviour:
   controller: {fileID: 339815032}
   animator: {fileID: 0}
   moveSpeed: 600
-  gravity: -2000
+  gravity: -4000
   jumpHeight: 200
   annen: 50
   dashSpeed: 2500
