@@ -11929,7 +11929,7 @@ MonoBehaviour:
   annen: 50
   dashSpeed: 2500
   dashTime: 0.2
-  dashCooldown: 1
+  dashCooldown: 15
   mouseTurnSpeed: 2
 --- !u!114 &339815034
 MonoBehaviour:
@@ -35406,7 +35406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DusmanYapayZeka
   oyuncu: {fileID: 339815030}
-  saldiriMesafesi: 100
+  saldiriMesafesi: 130
 --- !u!195 &1066238093
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -68206,7 +68206,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 6.6666665
+  m_VoxelSize: 13.333333
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: e90706e228119844f8645ed033d2875d, type: 2}
   m_BuildHeightMesh: 0
