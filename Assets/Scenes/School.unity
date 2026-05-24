@@ -35416,7 +35416,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1066238091}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 35.08
+  m_Radius: 40
   m_Speed: 300
   m_Acceleration: 750
   avoidancePriority: 50
@@ -35425,7 +35425,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 187.3
+  m_Height: 220
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -35975,7 +35975,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 744bf317ffc9df84a81340870c38a3cf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 721
+      value: 733.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 744bf317ffc9df84a81340870c38a3cf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -68206,7 +68206,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 11.666667
+  m_VoxelSize: 6.6666665
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: e90706e228119844f8645ed033d2875d, type: 2}
   m_BuildHeightMesh: 0
