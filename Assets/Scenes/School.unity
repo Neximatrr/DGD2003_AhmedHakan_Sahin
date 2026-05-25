@@ -29685,7 +29685,7 @@ Light:
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 200000
-  m_Range: 1500
+  m_Range: 500
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
@@ -29747,7 +29747,7 @@ Transform:
   m_GameObject: {fileID: 857231444}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8468, y: 333, z: -11469}
+  m_LocalPosition: {x: -3022, y: 333, z: -2259}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36625,7 +36625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DusmanYapayZeka
   oyuncu: {fileID: 339815030}
-  saldiriMesafesi: 130
+  saldiriMesafesi: 200
 --- !u!195 &1066238093
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -36636,10 +36636,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 40
-  m_Speed: 300
-  m_Acceleration: 750
+  m_Speed: 500
+  m_Acceleration: 900
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 160
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -64599,10 +64599,10 @@ Light:
   serializedVersion: 12
   m_Type: 0
   m_Color: {r: 0.8980392, g: 0.9529412, b: 1, a: 0}
-  m_Intensity: 100000
-  m_Range: 5000
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 0
+  m_Intensity: 200000
+  m_Range: 10000
+  m_SpotAngle: 40
+  m_InnerSpotAngle: 5
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
     m_Type: 0
