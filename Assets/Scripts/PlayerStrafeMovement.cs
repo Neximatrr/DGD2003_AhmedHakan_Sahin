@@ -11,7 +11,7 @@ public class PlayerStrafeMovement : MonoBehaviour
     public float moveSpeed = 80f;
     public float gravity = -20f;
     public float jumpHeight = 3f;
-    public float annen = 1.1f; // Raycast uzunluğunu buraya çektim
+    public float friction = 1.1f; // Raycast uzunluğunu buraya çektim
 
     [Header("Dash Settings")]
     public float dashSpeed = 40f;    // Dash hızı
@@ -77,7 +77,7 @@ public class PlayerStrafeMovement : MonoBehaviour
         {
             controller.Move(move * moveSpeed * Time.deltaTime);
 
-            bool yerdeyim = Physics.Raycast(transform.position, Vector3.down, annen);
+            bool yerdeyim = Physics.Raycast(transform.position, Vector3.down, friction);
 
             if (yerdeyim && velocity.y < 0f)
             {
