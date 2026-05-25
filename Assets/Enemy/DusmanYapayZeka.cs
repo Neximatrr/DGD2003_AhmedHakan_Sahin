@@ -50,6 +50,12 @@ public class DusmanYapayZeka : MonoBehaviour
         
         anim.SetTrigger("Saldir"); // Saldırı animasyonunu SADECE 1 KERE tetikle
         
+        // GAME MANAGER'A OYUNCUNUN YAKALANDIĞINI HABER VERİYORUZ
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.PlayerCaught();
+        }
+
         // NOT: Oyun bitmeyecekse, adamın 3 saniye sonra tekrar yürümesi için testi sıfırlayan kod:
         // Invoke("SaldriyiSifirla", 3f);
     }
