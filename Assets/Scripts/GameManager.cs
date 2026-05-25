@@ -30,9 +30,9 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI skorText;
 
-    public TextMeshProUGUI timerText;     // YENİ: Anlık akan süre yazısı
+    public TextMeshProUGUI timerText;     
 
-    public TextMeshProUGUI bestTimeText;  // YENİ: Rekor süre yazısı
+    public TextMeshProUGUI bestTimeText;  
 
     public GameObject winPanel;  
 
@@ -96,7 +96,7 @@ public class GameManager : MonoBehaviour
 
         UIGuncelle();
 
-        RekorUIYazdir(); // Oyun başlar başlamaz JSON'daki rekoru ekrana bas
+        RekorUIYazdir(); 
 
     }
 
@@ -106,7 +106,7 @@ public class GameManager : MonoBehaviour
 
     {
 
-        // Zamanı anlık olarak say ve ekrana yaz
+        
 
         if (isGameActive)
 
@@ -140,7 +140,7 @@ public class GameManager : MonoBehaviour
 
 
 
-    // SAYACI EKRANA YAZDIRMA KODU (00:00 FORMATINDA)
+    
 
     void ZamanUIYazdir()
 
@@ -162,7 +162,7 @@ public class GameManager : MonoBehaviour
 
 
 
-    // REKORU EKRANA YAZDIRMA KODU (JSON'DAN OKUYUP YAZAR)
+    
 
     void RekorUIYazdir()
 
@@ -190,7 +190,7 @@ public class GameManager : MonoBehaviour
 
             {
 
-                bestTimeText.text = "Best Time: --:--"; // Hiç kazanılmadıysa böyle yazsın
+                bestTimeText.text = "Best Time: --:--"; 
 
             }
 
@@ -276,7 +276,7 @@ public class GameManager : MonoBehaviour
 
 
 
-        // JSON KAYDINI TETİKLE (Yeni rekor mu diye kontrol edecek)
+        
 
         JSONKayit.RekorKaydet(gecenSure);
 

@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.InputSystem; // Yeni Input Sistemini koda dahil ettik
+using UnityEngine.InputSystem; 
 
 public class PlayerInteract : MonoBehaviour
 {
@@ -29,7 +29,7 @@ public class PlayerInteract : MonoBehaviour
             {
                 interactUI.SetActive(true);
 
-                // Yeni Input System ile F tuşuna basılıp basılmadığını kontrol ediyoruz
+                
                 if (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
                 {
                     dosya.Topla(); 

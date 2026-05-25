@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.AddressableAssets; 
-using System.Collections.Generic; // Listeleri kullanabilmek için ekledik
+using System.Collections.Generic; 
 
 public class DosyaSpawner : MonoBehaviour
 {
@@ -11,7 +11,7 @@ public class DosyaSpawner : MonoBehaviour
     public Transform[] spawnNoktalari; 
     
     [Header("Kaç Dosya Çıkacak?")]
-    public int cikacakDosyaSayisi = 5; // GameManager'daki toplamDosya sayısıyla aynı olmalı
+    public int cikacakDosyaSayisi = 5; 
 
     void Start()
     {
@@ -26,22 +26,22 @@ public class DosyaSpawner : MonoBehaviour
 
     void DosyalariRastgeleYarat()
     {
-        // 24 noktanın hepsini bir listeye kopyalıyoruz
+        
         List<Transform> musaitNoktalar = new List<Transform>(spawnNoktalari);
         
-        // Eğer yanlışlıkla 5'ten az nokta eklendiyse oyun çökmesin diye güvenlik önlemi
+        
         int uretilecekSayi = Mathf.Min(cikacakDosyaSayisi, musaitNoktalar.Count);
 
         for (int i = 0; i < uretilecekSayi; i++)
         {
-            // Kalan boş noktalar arasından RASTGELE birini seç
+            
             int rastgeleIndex = Random.Range(0, musaitNoktalar.Count);
             Transform secilenNokta = musaitNoktalar[rastgeleIndex];
 
-            // Kitabı seçilen o noktaya Addressables ile çağır
+            
             Addressables.InstantiateAsync(dosyaPrefabReferansi, secilenNokta.position, secilenNokta.rotation);
 
-            // Aynı noktaya üst üste 2 kitap çıkmasın diye, dolu noktayı listeden sil
+            
             musaitNoktalar.RemoveAt(rastgeleIndex);
         }
         

@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System.Collections; // Dash için IEnumerator kullanacağız
+using System.Collections; 
 
 public class PlayerStrafeMovement : MonoBehaviour
 {
@@ -11,14 +11,14 @@ public class PlayerStrafeMovement : MonoBehaviour
     public float moveSpeed = 80f;
     public float gravity = -20f;
     public float jumpHeight = 3f;
-    public float friction = 1.1f; // Raycast uzunluğunu buraya çektim
+    public float friction = 1.1f; 
 
     [Header("Dash Settings")]
-    public float dashSpeed = 40f;    // Dash hızı
-    public float dashTime = 0.2f;     // Dash süresi (ne kadar sürsün?)
-    public float dashCooldown = 1f;  // Tekrar dash atmak için bekleme süresi
-    private bool isDashing = false;  // Dash atıyor mu kontrolü
-    private bool canDash = true;     // Dash atabilir mi kontrolü
+    public float dashSpeed = 40f;    
+    public float dashTime = 0.2f;     
+    public float dashCooldown = 1f;  
+    private bool isDashing = false;  
+    private bool canDash = true;     
 
     [Header("Look")]
     public float mouseTurnSpeed = 2f;
@@ -36,7 +36,7 @@ public class PlayerStrafeMovement : MonoBehaviour
 
     void Update()
     {
-        // Dash atarken normal hareketi durduruyoruz
+        
         if (isDashing) return;
 
         float x = 0f;
@@ -94,19 +94,19 @@ public class PlayerStrafeMovement : MonoBehaviour
         }
     }
 
-    // --- DASH MANTIĞI ---
+    
     private IEnumerator Dash(float x, float z)
     {
         canDash = false;
         isDashing = true;
 
-        // Yerçekimini dash anında hissetmemek için dikey hızı sıfırlıyoruz
+        
         velocity.y = 0;
 
-        // Karakterin baktığı yöne veya bastığı yöne göre dash yönü belirle
+        
         Vector3 dashDirection;
         if (x == 0 && z == 0) 
-            dashDirection = transform.forward; // Tuşa basmıyorsa baktığı yöne atılsın
+            dashDirection = transform.forward; 
         else
             dashDirection = transform.right * x + transform.forward * z;
 
