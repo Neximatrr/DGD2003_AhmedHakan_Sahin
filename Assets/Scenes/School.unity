@@ -36625,7 +36625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DusmanYapayZeka
   oyuncu: {fileID: 339815030}
-  saldiriMesafesi: 200
+  saldiriMesafesi: 175
 --- !u!195 &1066238093
 NavMeshAgent:
   m_ObjectHideFlags: 0
