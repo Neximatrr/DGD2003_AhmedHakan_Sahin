@@ -10,8 +10,8 @@ public class PlayerStrafeMovement : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed = 80f;
     public float gravity = -20f;
-    public float jumpHeight = 3f;
-    public float friction = 1.1f; 
+    public float jumpHeight = 200f;
+    public float groundDistance = 1.1f; 
 
     [Header("Dash Settings")]
     public float dashSpeed = 40f;    
@@ -77,7 +77,7 @@ public class PlayerStrafeMovement : MonoBehaviour
         {
             controller.Move(move * moveSpeed * Time.deltaTime);
 
-            bool yerdeyim = Physics.Raycast(transform.position, Vector3.down, friction);
+            bool yerdeyim = Physics.Raycast(transform.position, Vector3.down, groundDistance);
 
             if (yerdeyim && velocity.y < 0f)
             {
