@@ -18,7 +18,8 @@ MonoBehaviour:
   - m_GUID: 1e531b79419b3774c9fe5714b5302b5e
     m_Address: Assets/Prefabs/ProjeDosyasi.prefab
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - default
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 0a204bab11141f74ebe4bcf7b9ac41c4, type: 2}
