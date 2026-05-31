@@ -12393,7 +12393,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   moveSpeed: 600
   gravity: -4000
-  jumpHeight: 200
+  jumpHeight: 0
   groundDistance: 10
   dashSpeed: 2500
   dashTime: 0.2
