@@ -49,7 +49,7 @@ public class PlayerStrafeMovement : MonoBehaviour
             if (Keyboard.current[Key.W].isPressed) z = 1f;
             if (Keyboard.current[Key.S].isPressed) z = -1f;
 
-            // --- DASH TETİKLEME (E TUŞU) ---
+            
             if (Keyboard.current[Key.E].wasPressedThisFrame && canDash)
             {
                 StartCoroutine(Dash(x, z));
@@ -120,7 +120,7 @@ public class PlayerStrafeMovement : MonoBehaviour
 
         isDashing = false;
 
-        // Bekleme süresi
+        
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
     }
